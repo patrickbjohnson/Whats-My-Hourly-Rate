@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* CSS Reset
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* end reset */
+
+
+.border {
+  border: 1px solid red;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  height: 100%;
+  position: relative;
+  width: 95%;
+  padding-top: 75px;
+  text-align: center;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+}
+
+
+h1, h2, h3, 
+h4, h5, h6 {
+  font-size: 36px;
+  line-height: 150%;
+  font-weight: 900;
+}
+
+p {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+
+
+.logo {
+  height: 100px;
+  width: 100px;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  margin: 25px auto;
+  background: #66CC6E;
+  border-radius: 50%;
+  font-size: 68px;
+  line-height: 100px;
+  color: #fff;
+}
+
+.salaryInput {
+  width: 150px;
+  height: 20px;
+  margin: 15px auto;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  box-shadow: inset 0px 0px 3px rgb(178,178,178);
+  moz-box-shadow: inset 0px 0px 3px rgb(178,178,178);
+  -webkit-box-shadow: inset 0px 0px 3px rgb(178,178,178);
+  
+}
+
+button {
+  height: 40px;
+  padding: 10px;
+  background: #66CC6E;
+  font-family: 'Lato', helvetica, arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #39AC45;   
+}
+
+#result p{
+  display: none;
+  font-size: 40px;
+}
+
+#error-message {
+  margin: auto;
+  display: none;
+  margin-right: 129px;
+  color: #E42217;
+}
+
+.social {
+
+}
+
+.message {
+  padding: 5px;
+}
+
+.message p,a {
+  font-size: 12px;
+  color: #ccc;
+}
+
+
+footer  {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.border {
+  border:1px solid red;
+}

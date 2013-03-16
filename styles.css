@@ -60,16 +60,14 @@ table {
 
 html, body {
   height: 100%;
+  text-align: center;
 }
 
 .wrapper {
-  min-height: 100%;
-  height: 100%;
-  position: relative;
-  width: 95%;
-  padding-top: 75px;
-  text-align: center;
+  height: 300px;
+  padding-top: 150px;
   font-family: 'Lato', helvetica, arial, sans-serif;
+
 }
 
 
@@ -136,16 +134,20 @@ button:hover {
   font-size: 40px;
 }
 
+#result-value {
+  font-weight: bold;
+}
+
 #error-message {
-  margin: auto;
   display: none;
-  margin-right: 129px;
+
+}
+
+#error-message p {
+  font-size: 14px;
   color: #E42217;
 }
 
-.social {
-
-}
 
 .message {
   padding: 5px;
@@ -158,10 +160,14 @@ button:hover {
 
 
 footer  {
-  position: absolute;
+  position: fixed;
+  height: 80px;
   width: 100%;
   bottom: 0;
-} 
+  padding: 5px;
+
+
+}
 
 
 

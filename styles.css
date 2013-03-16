@@ -52,22 +52,14 @@ table {
 
 /* end reset */
 
-
-.border {
-  border: 1px solid red;
-}
-
-
 html, body {
   height: 100%;
   text-align: center;
 }
 
 .wrapper {
-  height: 300px;
   padding-top: 150px;
   font-family: 'Lato', helvetica, arial, sans-serif;
-
 }
 
 
@@ -82,8 +74,6 @@ p {
   font-size: 18px;
   line-height: 150%;
 }
-
-
 
 .logo {
   height: 100px;
@@ -109,7 +99,6 @@ p {
   box-shadow: inset 0px 0px 3px rgb(178,178,178);
   moz-box-shadow: inset 0px 0px 3px rgb(178,178,178);
   -webkit-box-shadow: inset 0px 0px 3px rgb(178,178,178);
-  
 }
 
 button {
@@ -140,14 +129,12 @@ button:hover {
 
 #error-message {
   display: none;
-
 }
 
 #error-message p {
   font-size: 14px;
   color: #E42217;
 }
-
 
 .message {
   padding: 5px;
@@ -158,32 +145,10 @@ button:hover {
   color: #ccc;
 }
 
-
 footer  {
   position: fixed;
   height: 80px;
   width: 100%;
   bottom: 0;
   padding: 5px;
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.border {
-  border:1px solid red;
 }

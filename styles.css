@@ -54,35 +54,50 @@ table {
 
 html, body {
   height: 100%;
-  text-align: center;
+  font-family: 'Lato', helvetica, arial, sans-serif;
 }
 
 .wrapper {
   padding-top: 150px;
-  font-family: 'Lato', helvetica, arial, sans-serif;
 }
 
-
+.main {
+  text-align: center;
+}
 h1, h2, h3, 
 h4, h5, h6 {
-  font-size: 36px;
+  font-size: 2.250em;
   line-height: 150%;
   font-weight: 900;
 }
 
 p {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 150%;
 }
+
+a:link {
+  color: #ccc;
+}                
+a:visited {
+  color: #ccc;
+}                 
+a:hover {
+  color: #ccc;
+}                 
+a:active {
+  color: #ccc;
+}                 
+
+
 
 .logo {
   height: 100px;
   width: 100px;
-  font-family: 'Lato', helvetica, arial, sans-serif;
   margin: 25px auto;
   background: #66CC6E;
   border-radius: 50%;
-  font-size: 68px;
+  font-size: 4.250em;
   line-height: 100px;
   color: #fff;
 }
@@ -94,7 +109,7 @@ p {
   padding: 10px;
   border-radius: 3px;
   font-family: 'Lato', helvetica, arial, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   border: 1px solid #ccc;
   box-shadow: inset 0px 0px 3px rgb(178,178,178);
   moz-box-shadow: inset 0px 0px 3px rgb(178,178,178);
@@ -106,7 +121,7 @@ button {
   padding: 10px;
   background: #66CC6E;
   font-family: 'Lato', helvetica, arial, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   color: #fff;
   text-transform: uppercase;
   border-radius: 3px;
@@ -120,7 +135,7 @@ button:hover {
 
 #result p{
   display: none;
-  font-size: 40px;
+  font-size: 2.500em;
 }
 
 #result-value {
@@ -132,23 +147,36 @@ button:hover {
 }
 
 #error-message p {
-  font-size: 14px;
+  font-size: .875em;
   color: #E42217;
 }
 
-.message {
-  padding: 5px;
+.credits {
+  float: left;
+  padding-left: 4px;
 }
 
-.message p,a {
-  font-size: 12px;
+.twitter {
+  float: right;
+  padding: 0 5px;
+}
+
+.facebook {
+  float: right;
+  width: 70px;
+  padding-right: 5px;
+  overflow: none;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  height: 25px;
+  bottom: 0;
+  font-size: .625em;
   color: #ccc;
 }
 
-footer  {
-  position: fixed;
-  height: 80px;
-  width: 100%;
-  bottom: 0;
-  padding: 5px;
+#border {
+  border: 1px solid red;
 }

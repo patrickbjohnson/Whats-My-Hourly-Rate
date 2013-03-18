@@ -156,10 +156,15 @@ button:hover {
   padding-left: 4px;
 }
 
+.social {
+  padding-right: 5px;
+}
+
 .twitter {
   float: right;
   padding: 0 5px;
 }
+
 
 .facebook {
   float: right;

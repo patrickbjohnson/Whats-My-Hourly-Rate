@@ -2,13 +2,14 @@ $(document).ready(function() {
        	$("button").click(function () {
        	$('#result-value').empty();
 		var userSalary = $('.salaryInput').val();
+		var salary = userSalary.replace("$","").replace(",","");
 		
 		if(regIsNumber(userSalary)) { 
 		
 				/* run this part if userSalary is a number */
-	  			var salary = userSalary.replace("$","").replace(",","");
+	  			
 	       		var salValue = (parseInt(salary) / 52) / 40;
-	       		var new_number = Math.round(salValue).toFixed(2);
+	       		var new_number = salValue.toFixed(2);
 	       		$('#result-value').append(new_number);
 	
 				/* add some logic here to fadeOut if #result div is visible */
@@ -35,6 +36,6 @@ $(document).ready(function() {
 	
 	/* check for numbers */
 	function regIsNumber(fData)	{
-    		var reg = new RegExp("^[-]?[0-9]+[\.]?[0-9]+$");
+    		var reg = new RegExp("^[\$]?[-]?[0-9]+[\,]?[0-9]+(\.[0-9]{1,2})?$");
     		return reg.test(fData)
 	}

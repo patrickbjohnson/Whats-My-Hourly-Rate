@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>What's My Hourly Rate? - Discover how much your salaried job pays you per hour</title>
+  <title>What's My Hourly Rate? - Discover how much you make per hour</title>
   <meta name="description" content="Discover how much you make an hour as a salaried employee." />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:title" content="What&#039;s My Hourly Rate?" />
@@ -17,20 +17,18 @@
   <![endif]-->
   <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
   <link href="styles.css" rel="stylesheet" type="text/css" />
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>  
-  <script type="text/javascript" src="index.js"></script> 
 
 </head>
 <body>
- 
   <div class="wrapper">
     <div class="main">
       <div class="logo">$</div>
         <h1>What's My Hourly Rate?</h1>
         <p>Type your salary to find out how much you make per hour.</p>
-
-        <input type="text" name="salaryInput" class="salaryInput" placeholder="Enter Salary" value="" />
-        <button>submit</button>
+        <div class="input-field">
+          <input type="text" name="salaryInput" class="salaryInput" placeholder="Enter Salary" value="" />
+          <button>submit</button>
+        </div>
 
       <div id="result">
         <p>You make $<span id="result-value"></span> an hour.</p>
@@ -50,7 +48,6 @@
         <div class="twitter">
           <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Discover your hourly rate with" data-count="none">Tweet</a>
         </div>
-
         <div class="credits">
           <p>made by <a href="http://www.twitter.com/patrickbjohnson" target="_blank">pbj</a> with thanks to <a href="http://twitter.com/aub" target="_blank">@aub</a>, <a href="http://twitter.com/navr" target="_blank">@navr</a> and <a href="http://createchwebdesign.com/" target="_blank">Luqmaan</a></p>
         </div>
@@ -58,10 +55,12 @@
     </footer><!-- End Footer -->
   </div><!-- End Wrapper -->
 
-
   <!-- Social Scripts -->
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><!-- Twitter -->
 
+  <!-- JavaScriptz -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>  
+  <script type="text/javascript" src="index.js"></script> 
 
   <!-- Google Analytics -->
   <script type="text/javascript">

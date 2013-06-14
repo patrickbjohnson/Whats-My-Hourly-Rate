@@ -66,9 +66,9 @@ html, body {
 }
 h1, h2, h3, 
 h4, h5, h6 {
-  font-size: 2.250em;
-  line-height: 150%;
+  font-size: 2.250em;  
   font-weight: 900;
+  line-height: 150%;
 }
 
 p {
@@ -92,14 +92,15 @@ a:active {
 
 
 .logo {
-  height: 100px;
   width: 100px;
+  height: 100px;
   margin: 25px auto;
-  background: #66CC6E;
-  border-radius: 50%;
   font-size: 4.250em;
   line-height: 100px;
   color: #fff;
+  background: #66CC6E;
+  border-radius: 50%;
+
 }
 
 .salaryInput {
@@ -107,13 +108,15 @@ a:active {
   height: 20px;
   margin: 15px auto;
   padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 3px;
   font-family: 'Lato', helvetica, arial, sans-serif;
   font-size: 1em;
-  border: 1px solid #ccc;
-  box-shadow: inset 0px 0px 3px rgb(178,178,178);
-  moz-box-shadow: inset 0px 0px 3px rgb(178,178,178);
   -webkit-box-shadow: inset 0px 0px 3px rgb(178,178,178);
+  -moz-box-shadow: inset 0px 0px 3px rgb(178,178,178);
+  -ms-box-shadow: inset 0px 0px 3px rgb(178,178,178);
+  -o-box-shadow: inset 0px 0px 3px rgb(178,178,178);
+  box-shadow: inset 0px 0px 3px rgb(178,178,178);
 }
 
 button {
@@ -165,7 +168,6 @@ button:hover {
   padding: 0 5px;
 }
 
-
 .facebook {
   float: right;
   width: 70px;
@@ -180,8 +182,4 @@ footer {
   bottom: 0;
   font-size: .625em;
   color: #ccc;
-}
-
-#border {
-  border: 1px solid red;
 }

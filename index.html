@@ -1,80 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>What's My Hourly Rate? - Discover how much you make per hour</title>
-  <meta name="description" content="Discover how much you make an hour as a salaried employee." />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta property="og:title" content="What&#039;s My Hourly Rate?" />
-  <meta property="og:type" content="" />
-  <meta property="og:url" content="http://www.whatsmyhourlyrate.com" />
-  <meta property="og:image" content="/images/fb_thumb.png" />
-  <meta property="og:site_name" content="What&#039;s My Hourly Rate" />
-  <meta property="fb:admins" content="618119672" />
-  
-  <!--[if IE]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,900' rel='stylesheet' type='text/css'>
-  <link href="styles.css" rel="stylesheet" type="text/css" />
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>What's My Hourly Rate</title>
+        <meta name="description" content="Convert your annual salary into an hourly rate.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-</head>
-<body>
-  <div class="wrapper">
-    <div class="main">
-      <div class="logo">$</div>
-        <h1>What's My Hourly Rate?</h1>
-        <p>Type your salary to find out how much you make per hour.</p>
-        <div class="input-field">
-          <input type="text" name="salaryInput" class="salaryInput" placeholder="Enter Salary" value="" />
-          <button>submit</button>
-        </div>
+        <link rel="stylesheet" href="stylesheets/styles.css">
+        <link href="http://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.js"></script>
+    </head>
+    <body>
+    		<div id="fb-root"></div>
+    		<script>(function(d, s, id) {
+    		  var js, fjs = d.getElementsByTagName(s)[0];
+    		  if (d.getElementById(id)) return;
+    		  js = d.createElement(s); js.id = id;
+    		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=421453434615996";
+    		  fjs.parentNode.insertBefore(js, fjs);
+    		}(document, 'script', 'facebook-jssdk'));</script>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+				
+				<section class="container">
+					<span class="branding">$</span>
+					<h1>What's Your Hourly Rate?</h1>
+					<p>Convert your salary to an hourly rate.</p>
+					<form action="#" class="form">
+						<input type="text" pattern="\d*"class="salary-input" placeholder="type your salary!">
+						<input type="submit" class="submit" value="submit">
+					</form><!-- end form -->
+					<div class="responses">
+						<div class="result">
+							<p>You make $<span class="hourly-rate"></span> an hour.</p>
+						</div><!-- Converted hourly rate  -->
+						<div class="error-message">
+							<p>Number's only please!</p>
+						</div
+					</div><!-- response messages -->
+				</section>
 
-      <div id="result">
-        <p>You make $<span id="result-value"></span> an hour.</p>
-      </div><!-- User Hourly Rate Message  -->
+				<footer>
 
-      <div id="error-message">
-        <p>Numbers only</p>
-      </div> <!-- Error Message  -->
-    </div><!-- End Main -->
-    
-    <footer>
-      <div class="social">
-        <div class="facebook">
-          <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.whatsmyhourlyrate.com&amp;send=false&amp;layout=button_count&amp;width=300&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=35&amp;appId=421453434615996" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:35px;" allowTransparency="true"></iframe>
-        </div>
-        
-        <div class="twitter">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Discover your hourly rate with" data-count="none">Tweet</a>
-        </div>
-        <div class="credits">
-          <p>made by <a href="http://www.twitter.com/patrickbjohnson" target="_blank">pbj</a> with thanks to <a href="http://twitter.com/aub" target="_blank">@aub</a>, <a href="http://twitter.com/navr" target="_blank">@navr</a> and <a href="http://createchwebdesign.com/" target="_blank">Luqmaan</a></p>
-        </div>
-      </div>
-    </footer><!-- End Footer -->
-  </div><!-- End Wrapper -->
+					<span class="credits">made with &hearts; by <a href="http://www.pbj.me" target="_blank">pbj</a></span>
 
-  <!-- Social Scripts -->
-  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><!-- Twitter -->
-
-  <!-- JavaScriptz -->
-  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>  
-  <script type="text/javascript" src="index.js"></script> 
-
-  <!-- Google Analytics -->
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-36397471-2']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+					<div class="twitter">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://whatsmyhourlyrate.com" data-text="I converted my salary to an hourly rate with">Tweet</a>
+                        
 
 
- 
-</body>
+                        <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-text="Discover your hourly rate with" data-count="none">Tweet</a> -->
+					</div>
+
+				</footer>
+				
+
+				<!-- twitter script -->
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+
+
+        <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script> -->
+    </body>
 </html>
+
+
+        

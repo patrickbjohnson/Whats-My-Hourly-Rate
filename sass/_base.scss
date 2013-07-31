@@ -1,0 +1,30 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "susy";
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$total-columns  : 12;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+// variables 
+
+$main-font: 'Lato', arial, helvetica, sans-serif;
+$main-font-size: 2.250em;
+$p-font-size: 1.125em;
+$placeholder-font-size: 1em;
+$p-error-font-size: 1.250em;
+
+$main-font-weight: 400;
+$p-font-weight: 300;
+
+$logo-color: #66CC6E;
+
+
+$main-border: 1px solid #ccc;
+
+

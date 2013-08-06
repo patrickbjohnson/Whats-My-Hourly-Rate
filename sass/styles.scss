@@ -78,7 +78,7 @@ html, body {
 
 			&[type="submit"] {
 				display: table-cell;
-				height: 44px;
+				height: 42px;
 				background: #66CC6E;
 				border: 1px solid #39AC45;
 				padding: 5px 20px;
@@ -142,6 +142,7 @@ footer {
 	input { 
 		float: left;
 		-webkit-appearance: none; 
+		padding: 0;
 	}
 		
 }		

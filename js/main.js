@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$('form').submit(function(e){
 		e.preventDefault();
+		$('.salary-input').blur();
 		var salary = $('.salary-input').val().replace(/[$,]/g, '');
 		var salaryCalc = (parseInt(salary) / 52) / 40;
 		var hourlyRate = salaryCalc.toFixed(2);

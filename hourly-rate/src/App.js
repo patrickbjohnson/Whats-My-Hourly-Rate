@@ -50,31 +50,38 @@ class Input extends Component {
 class StateList extends Component {
     constructor() {
         super();
+        this.states = States.STATES;
 
         this.state = {
-            selectedState: ''
+            selectedState: 'nothing'
         }
 
-        this.handleStateChange = this.onStateChange.bind(this, 'selectChange');
+        console.log(this.states);
     }
 
-    onStateChange(event) {
-        console.log(event);
-        // this.setState({
-        //     selectedState: event.target.value
-        // });
+    onStateChange = (e) => {
+
+        this.setState({
+            selectedState: this.states[e.target.value]
+        });
     }
+
+    currentState = (current, selected) => {
+        console.log('foo');
+        return true;
+        // return current === selected;
+    }
+
 
     render() {
-        const states = States.STATES;
-        console.log(states);
+
         return (
             <div>
-                <select value="{this.state.selectedState}" onChange="handleStateChange" name="" id=""  ref="selectChange">
+                <select value={this.state.selectedState} onChange={this.onStateChange} ref="selectChange">
                     <option value="null">-- Select State</option>
                     {
-                    states.map(function( state ) {
-                        return <option value={state.name} key={state.abbr}>{state.name}</option>;
+                    this.states.map(function(state, i) {
+                        return <option value={i} key={state.abbr} >{state.name}</option>;
                     })
                 }
                 </select>
